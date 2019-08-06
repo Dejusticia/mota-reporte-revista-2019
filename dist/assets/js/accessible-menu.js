@@ -1,9 +1,9 @@
 /*!
- * mota-evaluador v0.4.5
- * Evaluador de Transparencia Activa en Colombia - Iniciativa MOTA
+ * mota-reporte-revista-2019 v0.1.0
+ * Reporte MOTA - Revista Alianza Más Informaciones, Más Derechos
  * (c) 2019 
  * MIT License
- * https://github.com/Dejusticia/mota-evaluador-publico
+ * git+https://github.com/Dejusticia/mota-reporte-revista-2019.git
  */
 
 /*
