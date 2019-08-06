@@ -1,0 +1,35 @@
+{
+  "name": "mota-reporte-revista-2019",
+  "version": "0.1.0",
+  "description": "Reporte MOTA - Revista Alianza Más Informaciones, Más Derechos",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dejusticia/mota-reporte-revista-2019.git"
+  },
+  "keywords": [
+    "MOTA",
+    "ATOM",
+    "transparencia",
+    "transparency",
+    "revista",
+    "Alianza",
+    "Más",
+    "Informaciones",
+    "Más",
+    "Derechos",
+    "Colombia",
+    "Colômbia",
+    "transparência",
+    "reporte"
+  ],
+  "author": "Celso Bessa, Daniel Ospina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dejusticia/mota-reporte-revista-2019/issues"
+  },
+  "homepage": "https://github.com/Dejusticia/mota-reporte-revista-2019#readme"
+}
