@@ -68,7 +68,7 @@ summary::-webkit-details-marker {
 }
 
 /* line 53, src/assets/sass/style.css */
-#results-summary-error {
+#report-section--summary-error {
   background-color: #FFDB1A;
   color: #222;
   font-weight: 600;
@@ -319,14 +319,20 @@ input {
 ---------------------------------------------------------------------------------------------------- */
 /* ## Site Containers
 --------------------------------------------- */
+/* line 270, src/assets/sass/style.css */
+main {
+  padding: 55px 0;
+  padding: 5.5rem 0;
+}
+
 /* # Skip Links
 ---------------------------------------------------------------------------------------------------- */
-/* line 273, src/assets/sass/style.css */
+/* line 278, src/assets/sass/style.css */
 .skip-link {
   margin: 0;
 }
 
-/* line 277, src/assets/sass/style.css */
+/* line 282, src/assets/sass/style.css */
 .skip-link li {
   height: 0;
   width: 0;
@@ -334,7 +340,7 @@ input {
 }
 
 /* Display outline on focus */
-/* line 284, src/assets/sass/style.css */
+/* line 289, src/assets/sass/style.css */
 :focus {
   color: #333;
   outline: #ccc solid 1px;
@@ -350,19 +356,21 @@ input {
 --------------------------------------------- */
 /* ## Site Header Navigation
 --------------------------------------------- */
-/* line 304, src/assets/sass/style.css */
+/* line 309, src/assets/sass/style.css */
 header {
   background-color: #012f89;
   color: #efefef;
+  position: fixed;
+  width: 100%;
 }
 
-/* line 308, src/assets/sass/style.css */
+/* line 315, src/assets/sass/style.css */
 header nav {
   margin: 0 auto;
   max-width: 95%;
 }
 
-/* line 312, src/assets/sass/style.css */
+/* line 319, src/assets/sass/style.css */
 ul[role="menubar"] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,14 +387,14 @@ ul[role="menubar"] {
   padding: 1rem 0;
 }
 
-/* line 323, src/assets/sass/style.css */
+/* line 330, src/assets/sass/style.css */
 ul[role="menubar"] [role="menuitem"],
 ul[role="menubar"] [role="separator"] {
   padding: 0.25em;
   background-color: transparent;
 }
 
-/* line 329, src/assets/sass/style.css */
+/* line 336, src/assets/sass/style.css */
 ul[role="menubar"] [role="separator"] {
   padding-top: 0.15em;
   background-image: url("../img/separator.png");
@@ -394,7 +402,7 @@ ul[role="menubar"] [role="separator"] {
   background-repeat: repeat-x;
 }
 
-/* line 336, src/assets/sass/style.css */
+/* line 343, src/assets/sass/style.css */
 ul[role="menubar"] [role="menuitem"]:focus,
 ul[role="menubar"] [role="menuitem"]:hover,
 ul[role="menubar"] [role="separator"]:focus,
@@ -403,20 +411,20 @@ ul[role="menubar"] [role="separator"]:hover {
   color: white;
 }
 
-/* line 344, src/assets/sass/style.css */
+/* line 351, src/assets/sass/style.css */
 ul[role="menubar"] a[role="menuitem"] {
   text-decoration: none;
   color: #efefef;
 }
 
-/* line 349, src/assets/sass/style.css */
+/* line 356, src/assets/sass/style.css */
 ul[role="menubar"] li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 355, src/assets/sass/style.css */
+/* line 362, src/assets/sass/style.css */
 ul[role="menubar"] > li,
 ul[role="menubar"] h1 {
   display: inline-block;
@@ -425,30 +433,30 @@ ul[role="menubar"] h1 {
   text-align: center;
 }
 
-/* line 362, src/assets/sass/style.css */
+/* line 369, src/assets/sass/style.css */
 .menubar-logo {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
 
-/* line 365, src/assets/sass/style.css */
+/* line 372, src/assets/sass/style.css */
 ul[role="menubar"] h1 {
   margin: 0;
 }
 
-/* line 369, src/assets/sass/style.css */
+/* line 376, src/assets/sass/style.css */
 ul[role="menubar"] > li.has-submenu > a::after {
   content: url("../img/svg/caret-down-12px.svg");
   padding-left: 0.25em;
 }
 
-/* line 374, src/assets/sass/style.css */
+/* line 381, src/assets/sass/style.css */
 ul[role="menubar"] > li.has-submenu > a::after {
   content: url("../img/svg/caret-down-yellow-12px.svg");
   padding-left: 0.25em;
 }
 
-/* line 379, src/assets/sass/style.css */
+/* line 386, src/assets/sass/style.css */
 ul[role="menubar"] ul[role="menu"] {
   display: none;
   position: absolute;
@@ -458,13 +466,13 @@ ul[role="menubar"] ul[role="menu"] {
   padding: 0;
 }
 
-/* line 388, src/assets/sass/style.css */
+/* line 395, src/assets/sass/style.css */
 ul[role="menubar"] ul[role="menu"] li a {
   display: block;
   width: 10em;
 }
 
-/* line 393, src/assets/sass/style.css */
+/* line 400, src/assets/sass/style.css */
 ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
   content: url("../images/right-arrow-brown.png");
   padding-right: 2em;
@@ -472,58 +480,29 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
 
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
-/* ## Evaluate Form
---------------------------------------------- */
-/* line 403, src/assets/sass/style.css */
-section[aria-labelledby="evaluate-header"] > h2,
-section[aria-labelledby="evaluate-header"] > form {
-  margin: 0 auto;
-  max-width: 90%;
-  padding: 2rem 0;
-}
-
-/* line 409, src/assets/sass/style.css */
-section[aria-labelledby="evaluate-header"] {
-  background-color: #fccc11;
-  color: #222;
-  padding: 2rem 0;
-  text-align: center;
-}
-
-/* line 416, src/assets/sass/style.css */
-#evaluate-url {
-  width: 75%;
-}
-
-/* line 419, src/assets/sass/style.css */
-section[aria-labelledby="evaluate-header"] input[type="submit"] {
-  width: 50%;
-}
-
 /* ## Main Content Area
 --------------------------------------------- */
-/* line 426, src/assets/sass/style.css */
+/* line 411, src/assets/sass/style.css */
 .main-content {
   margin: 0 auto;
   max-width: 90%;
   padding: 2rem 0;
 }
 
-/* line 432, src/assets/sass/style.css */
-#results-summary {
+/* line 417, src/assets/sass/style.css */
+#report-section--summary {
   background-color: #f0f0f0;
   padding: 2rem;
 }
 
-/* line 436, src/assets/sass/style.css */
-#results-summary ul {
-  list-style: none;
+/* line 421, src/assets/sass/style.css */
+#report-section--summary ul {
   list-style-position: inside;
   padding: 0;
 }
 
-/* line 441, src/assets/sass/style.css */
-#results-summary-reference {
+/* line 425, src/assets/sass/style.css */
+#report-section--summary-reference {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,24 +512,24 @@ section[aria-labelledby="evaluate-header"] input[type="submit"] {
       flex-wrap: wrap;
 }
 
-/* line 446, src/assets/sass/style.css */
-#results-summary-reference div {
+/* line 430, src/assets/sass/style.css */
+#report-section--summary-reference div {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 
-/* line 449, src/assets/sass/style.css */
-#results-summary-reference p {
+/* line 433, src/assets/sass/style.css */
+#report-section--summary-reference p {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
 
-/* line 453, src/assets/sass/style.css */
+/* line 437, src/assets/sass/style.css */
 .main-content section {
   padding: 2rem 0;
 }
 
-/* line 457, src/assets/sass/style.css */
+/* line 441, src/assets/sass/style.css */
 .main-content h2,
 .main-content h3,
 .main-content h4 {
@@ -558,62 +537,60 @@ section[aria-labelledby="evaluate-header"] input[type="submit"] {
   padding-bottom: 1rem;
 }
 
+/* line 448, src/assets/sass/style.css */
+table caption {
+  font-weight: 600;
+  padding: 2rem 1rem;
+}
+
+/* line 453, src/assets/sass/style.css */
+thead {
+  font-weight: 600;
+}
+
+/* line 457, src/assets/sass/style.css */
+tr td,
+tr th {
+  padding: 1rem;
+  text-align: left;
+  word-wrap: break-word;
+}
+
 /* line 464, src/assets/sass/style.css */
-.main-content details {
-  padding: 1rem 1rem 2rem 1rem;
-  border-bottom: 1px dashed #ccc;
+th[role=columnheader] {
+  background-color: #ced8ec;
 }
 
 /* line 468, src/assets/sass/style.css */
-.main-content details:nth-of-type(even) {
-  background-color: #f3f3f3;
+thead th[role=rowheader] {
+  background-color: #c1d3f8;
 }
 
-/* line 472, src/assets/sass/style.css */
-.results-criteria div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+/* line 471, src/assets/sass/style.css */
+th[role=rowheader],
+.column-sub_headers {
+  background-color: #ddd;
 }
 
-/* line 477, src/assets/sass/style.css */
-.results-criteria p {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  width: 100%;
-}
-
-/* line 481, src/assets/sass/style.css */
-.results-criteria table {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  padding: 1rem;
-  text-align: left;
-  width: 100%;
-}
-
-/* line 487, src/assets/sass/style.css */
-.results-criteria thead {
-  background-color: #acc8ff;
-  line-height: 2;
-}
-
-/* line 491, src/assets/sass/style.css */
-.results-criteria th,
-.results-criteria td {
-  padding-left: 1rem;
+/* line 476, src/assets/sass/style.css */
+.row-001,
+.row-002,
+.row-003,
+.row-004 {
+  background-color: #efefef;
 }
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
-/* line 499, src/assets/sass/style.css */
+/* line 486, src/assets/sass/style.css */
 .footer {
   background-color: #be2a2c;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-/* line 502, src/assets/sass/style.css */
+/* line 492, src/assets/sass/style.css */
 .footer nav {
   margin: 0 auto;
   max-width: 90%;
@@ -623,151 +600,151 @@ section[aria-labelledby="evaluate-header"] input[type="submit"] {
 ---------------------------------------------------------------------------------------------------- */
 /* ## elevations from Material Design. See https://material-components.github.io/material-components-web-catalog/#/component/elevation
 --------------------------------------------- */
-/* line 512, src/assets/sass/style.css */
+/* line 502, src/assets/sass/style.css */
 .mdc-elevation--z0 {
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
 }
 
-/* line 517, src/assets/sass/style.css */
+/* line 507, src/assets/sass/style.css */
 .mdc-elevation--z1 {
   -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-/* line 522, src/assets/sass/style.css */
+/* line 512, src/assets/sass/style.css */
 .mdc-elevation--z2 {
   -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
-/* line 527, src/assets/sass/style.css */
+/* line 517, src/assets/sass/style.css */
 .mdc-elevation--z3 {
   -webkit-box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
 }
 
-/* line 532, src/assets/sass/style.css */
+/* line 522, src/assets/sass/style.css */
 .mdc-elevation--z4 {
   -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
-/* line 537, src/assets/sass/style.css */
+/* line 527, src/assets/sass/style.css */
 .mdc-elevation--z5 {
   -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
 }
 
-/* line 542, src/assets/sass/style.css */
+/* line 532, src/assets/sass/style.css */
 .mdc-elevation--z6 {
   -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
 
-/* line 547, src/assets/sass/style.css */
+/* line 537, src/assets/sass/style.css */
 .mdc-elevation--z7 {
   -webkit-box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
 }
 
-/* line 552, src/assets/sass/style.css */
+/* line 542, src/assets/sass/style.css */
 .mdc-elevation--z8 {
   -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* line 557, src/assets/sass/style.css */
+/* line 547, src/assets/sass/style.css */
 .mdc-elevation--z9 {
   -webkit-box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* line 562, src/assets/sass/style.css */
+/* line 552, src/assets/sass/style.css */
 .mdc-elevation--z10 {
   -webkit-box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
 }
 
-/* line 567, src/assets/sass/style.css */
+/* line 557, src/assets/sass/style.css */
 .mdc-elevation--z11 {
   -webkit-box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
 }
 
-/* line 572, src/assets/sass/style.css */
+/* line 562, src/assets/sass/style.css */
 .mdc-elevation--z12 {
   -webkit-box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
 }
 
-/* line 577, src/assets/sass/style.css */
+/* line 567, src/assets/sass/style.css */
 .mdc-elevation--z13 {
   -webkit-box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
 }
 
-/* line 582, src/assets/sass/style.css */
+/* line 572, src/assets/sass/style.css */
 .mdc-elevation--z14 {
   -webkit-box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
 }
 
-/* line 587, src/assets/sass/style.css */
+/* line 577, src/assets/sass/style.css */
 .mdc-elevation--z15 {
   -webkit-box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
 }
 
-/* line 592, src/assets/sass/style.css */
+/* line 582, src/assets/sass/style.css */
 .mdc-elevation--z16 {
   -webkit-box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
 }
 
-/* line 597, src/assets/sass/style.css */
+/* line 587, src/assets/sass/style.css */
 .mdc-elevation--z17 {
   -webkit-box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
 }
 
-/* line 602, src/assets/sass/style.css */
+/* line 592, src/assets/sass/style.css */
 .mdc-elevation--z18 {
   -webkit-box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
 }
 
-/* line 607, src/assets/sass/style.css */
+/* line 597, src/assets/sass/style.css */
 .mdc-elevation--z19 {
   -webkit-box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
 }
 
-/* line 612, src/assets/sass/style.css */
+/* line 602, src/assets/sass/style.css */
 .mdc-elevation--z20 {
   -webkit-box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
 }
 
-/* line 617, src/assets/sass/style.css */
+/* line 607, src/assets/sass/style.css */
 .mdc-elevation--z21 {
   -webkit-box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
 }
 
-/* line 622, src/assets/sass/style.css */
+/* line 612, src/assets/sass/style.css */
 .mdc-elevation--z22 {
   -webkit-box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
 }
 
-/* line 627, src/assets/sass/style.css */
+/* line 617, src/assets/sass/style.css */
 .mdc-elevation--z23 {
   -webkit-box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
 }
 
-/* line 632, src/assets/sass/style.css */
+/* line 622, src/assets/sass/style.css */
 .mdc-elevation--z24 {
   -webkit-box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
@@ -1091,7 +1068,7 @@ section[aria-labelledby="evaluate-header"] input[type="submit"] {
   }
 }
 
-/* line 940, src/assets/sass/style.css */
+/* line 930, src/assets/sass/style.css */
 .mdc-linear-progress {
   position: relative;
   width: 100%;
@@ -1103,12 +1080,12 @@ section[aria-labelledby="evaluate-header"] input[type="submit"] {
   overflow: hidden;
 }
 
-/* line 951, src/assets/sass/style.css */
+/* line 941, src/assets/sass/style.css */
 details + .mdc-linear-progress {
   display: none;
 }
 
-/* line 954, src/assets/sass/style.css */
+/* line 944, src/assets/sass/style.css */
 .mdc-linear-progress__bar {
   position: absolute;
   width: 100%;
@@ -1123,7 +1100,7 @@ details + .mdc-linear-progress {
   transition: transform 250ms 0ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 250ms 0ms cubic-bezier(0.4, 0, 0.6, 1);
 }
 
-/* line 969, src/assets/sass/style.css */
+/* line 959, src/assets/sass/style.css */
 .mdc-linear-progress__bar-inner {
   display: inline-block;
   position: absolute;
@@ -1133,7 +1110,7 @@ details + .mdc-linear-progress {
   animation: none;
 }
 
-/* line 977, src/assets/sass/style.css */
+/* line 967, src/assets/sass/style.css */
 .mdc-linear-progress__buffering-dots {
   position: absolute;
   width: 100%;
@@ -1144,7 +1121,7 @@ details + .mdc-linear-progress {
   background-size: 10px 4px;
 }
 
-/* line 986, src/assets/sass/style.css */
+/* line 976, src/assets/sass/style.css */
 .mdc-linear-progress__buffer {
   position: absolute;
   width: 100%;
@@ -1157,37 +1134,37 @@ details + .mdc-linear-progress {
   transition: transform 250ms 0ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 250ms 0ms cubic-bezier(0.4, 0, 0.6, 1);
 }
 
-/* line 999, src/assets/sass/style.css */
+/* line 989, src/assets/sass/style.css */
 .mdc-linear-progress__primary-bar {
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
 }
 
-/* line 1004, src/assets/sass/style.css */
+/* line 994, src/assets/sass/style.css */
 .mdc-linear-progress__secondary-bar {
   visibility: hidden;
 }
 
-/* line 1007, src/assets/sass/style.css */
+/* line 997, src/assets/sass/style.css */
 .mdc-linear-progress--indeterminate .mdc-linear-progress__bar {
   -webkit-transition: none;
   transition: none;
 }
 
-/* line 1012, src/assets/sass/style.css */
+/* line 1002, src/assets/sass/style.css */
 .mdc-linear-progress--indeterminate .mdc-linear-progress__primary-bar {
   left: -145.166611%;
   -webkit-animation: primary-indeterminate-translate 2s infinite linear;
   animation: primary-indeterminate-translate 2s infinite linear;
 }
 
-/* line 1017, src/assets/sass/style.css */
+/* line 1007, src/assets/sass/style.css */
 .mdc-linear-progress--indeterminate .mdc-linear-progress__primary-bar > .mdc-linear-progress__bar-inner {
   -webkit-animation: primary-indeterminate-scale 2s infinite linear;
   animation: primary-indeterminate-scale 2s infinite linear;
 }
 
-/* line 1021, src/assets/sass/style.css */
+/* line 1011, src/assets/sass/style.css */
 .mdc-linear-progress--indeterminate .mdc-linear-progress__secondary-bar {
   left: -54.888891%;
   -webkit-animation: secondary-indeterminate-translate 2s infinite linear;
@@ -1195,13 +1172,13 @@ details + .mdc-linear-progress {
   visibility: visible;
 }
 
-/* line 1027, src/assets/sass/style.css */
+/* line 1017, src/assets/sass/style.css */
 .mdc-linear-progress--indeterminate .mdc-linear-progress__secondary-bar > .mdc-linear-progress__bar-inner {
   -webkit-animation: secondary-indeterminate-scale 2s infinite linear;
   animation: secondary-indeterminate-scale 2s infinite linear;
 }
 
-/* line 1031, src/assets/sass/style.css */
+/* line 1021, src/assets/sass/style.css */
 .mdc-linear-progress--reversed .mdc-linear-progress__bar,
 .mdc-linear-progress--reversed .mdc-linear-progress__buffer {
   right: 0;
@@ -1209,82 +1186,82 @@ details + .mdc-linear-progress {
   transform-origin: center right;
 }
 
-/* line 1038, src/assets/sass/style.css */
+/* line 1028, src/assets/sass/style.css */
 .mdc-linear-progress--reversed .mdc-linear-progress__primary-bar {
   -webkit-animation-name: primary-indeterminate-translate-reverse;
   animation-name: primary-indeterminate-translate-reverse;
 }
 
-/* line 1042, src/assets/sass/style.css */
+/* line 1032, src/assets/sass/style.css */
 .mdc-linear-progress--reversed .mdc-linear-progress__secondary-bar {
   -webkit-animation-name: secondary-indeterminate-translate-reverse;
   animation-name: secondary-indeterminate-translate-reverse;
 }
 
-/* line 1046, src/assets/sass/style.css */
+/* line 1036, src/assets/sass/style.css */
 .mdc-linear-progress--reversed .mdc-linear-progress__buffering-dots {
   -webkit-animation: buffering-reverse 250ms infinite linear;
   animation: buffering-reverse 250ms infinite linear;
 }
 
-/* line 1050, src/assets/sass/style.css */
+/* line 1040, src/assets/sass/style.css */
 .mdc-linear-progress--closed {
   opacity: 0;
 }
 
-/* line 1054, src/assets/sass/style.css */
+/* line 1044, src/assets/sass/style.css */
 .mdc-linear-progress__bar-inner {
   background-color: #6200ee;
   /* @alternate */
   background-color: var(--mdc-theme-primary, #6200ee);
 }
 
-/* line 1060, src/assets/sass/style.css */
+/* line 1050, src/assets/sass/style.css */
 .mdc-linear-progress__buffering-dots {
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' enable-background='new 0 0 5 2' xml:space='preserve' viewBox='0 0 5 2' preserveAspectRatio='none slice'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23e6e6e6'/%3E%3C/svg%3E");
 }
 
-/* line 1064, src/assets/sass/style.css */
+/* line 1054, src/assets/sass/style.css */
 .mdc-linear-progress__buffer {
   background-color: #e6e6e6;
 }
 
-/* line 1068, src/assets/sass/style.css */
+/* line 1058, src/assets/sass/style.css */
 .mdc-linear-progress--indeterminate.mdc-linear-progress--reversed .mdc-linear-progress__primary-bar {
   right: -145.166611%;
   left: auto;
 }
 
-/* line 1072, src/assets/sass/style.css */
+/* line 1062, src/assets/sass/style.css */
 .mdc-linear-progress--indeterminate.mdc-linear-progress--reversed .mdc-linear-progress__secondary-bar {
   right: -54.888891%;
   left: auto;
 }
 
-/* line 1077, src/assets/sass/style.css */
+/* line 1067, src/assets/sass/style.css */
 .hero-linear-progress-indicator {
   width: 100%;
 }
 
-/* line 1081, src/assets/sass/style.css */
+/* line 1071, src/assets/sass/style.css */
 .demo-linear-progress-indicator {
   margin-top: 32px;
 }
 
-/* line 1085, src/assets/sass/style.css */
+/* line 1075, src/assets/sass/style.css */
 .results-content .mdc-linear-progress {
   margin: 2rem auto;
 }
 
 /* ## modifiers
 --------------------------------------------- */
-/* line 1092, src/assets/sass/style.css */
+/* line 1082, src/assets/sass/style.css */
 .no-border,
 *.no-border {
   border: none;
 }
 
-/* line 1097, src/assets/sass/style.css */
+/* line 1087, src/assets/sass/style.css */
 .no-padding,
 *.no-padding {
   padding: 0;
@@ -1294,7 +1271,7 @@ details + .mdc-linear-progress {
   padding-top: 0;
 }
 
-/* line 1106, src/assets/sass/style.css */
+/* line 1096, src/assets/sass/style.css */
 .no-margin,
 *.no-margin {
   margin: 0;
@@ -1309,19 +1286,19 @@ details + .mdc-linear-progress {
 /* ## Tablet
 --------------------------------------------- */
 @media only screen and (min-width: 640px) {
-  /* line 1122, src/assets/sass/style.css */
+  /* line 1112, src/assets/sass/style.css */
   ul[role="menubar"] {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 3rem;
   }
-  /* line 1126, src/assets/sass/style.css */
+  /* line 1116, src/assets/sass/style.css */
   .menubar-logo {
     -ms-flex-preferred-size: initial;
         flex-basis: initial;
   }
-  /* line 1129, src/assets/sass/style.css */
+  /* line 1119, src/assets/sass/style.css */
   section[aria-labelledby="evaluate-header"] input[type="submit"] {
     width: 17%;
     margin-left: 5%;
@@ -1331,13 +1308,13 @@ details + .mdc-linear-progress {
 /* ## Small Desktops and Laptops
 --------------------------------------------- */
 @media only screen and (min-width: 880px) {
-  /* line 1139, src/assets/sass/style.css */
+  /* line 1129, src/assets/sass/style.css */
   .results-criteria p {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
     width: 49%;
   }
-  /* line 1144, src/assets/sass/style.css */
+  /* line 1134, src/assets/sass/style.css */
   .results-criteria table {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
@@ -1349,7 +1326,7 @@ details + .mdc-linear-progress {
 /* ## Medium Desktops and Laptops
 --------------------------------------------- */
 @media only screen and (min-width: 1024px) {
-  /* line 1155, src/assets/sass/style.css */
+  /* line 1145, src/assets/sass/style.css */
   header nav,
   section[aria-labelledby="evaluate-header"] > h2,
   section[aria-labelledby="evaluate-header"] > form,
@@ -1362,7 +1339,7 @@ details + .mdc-linear-progress {
 /* ## Large Desktops and Laptops
 --------------------------------------------- */
 @media only screen and (min-width: 1200px) {
-  /* line 1168, src/assets/sass/style.css */
+  /* line 1158, src/assets/sass/style.css */
   header nav,
   section[aria-labelledby="evaluate-header"] > h2,
   section[aria-labelledby="evaluate-header"] > form,
