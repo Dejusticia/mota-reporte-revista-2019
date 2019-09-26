@@ -50,7 +50,7 @@ summary::-webkit-details-marker {
     color: #012f89;
 }
 
-#results-summary-error {
+#report-section--summary-error {
     background-color: #FFDB1A;
     color: #222;
     font-weight: 600;
@@ -267,6 +267,11 @@ input {
 /* ## Site Containers
 --------------------------------------------- */
 
+main {
+    padding: 55px 0;
+    padding: 5.5rem 0;
+}
+
 /* # Skip Links
 ---------------------------------------------------------------------------------------------------- */
 
@@ -304,6 +309,8 @@ input {
 header {
     background-color: #012f89;
     color: #efefef;
+    position: fixed;
+    width: 100%;
 }
 header nav {
     margin: 0 auto;
@@ -397,28 +404,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
 
-/* ## Evaluate Form
---------------------------------------------- */
-
-section[aria-labelledby="evaluate-header"] > h2,
-section[aria-labelledby="evaluate-header"] > form {
-    margin: 0 auto;
-    max-width: 90%;
-    padding: 2rem 0;
-}
-section[aria-labelledby="evaluate-header"] {
-    background-color: #fccc11;
-    color: #222;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-#evaluate-url {
-    width: 75%;
-}
-section[aria-labelledby="evaluate-header"] input[type="submit"] {
-    width: 50%;
-}
 
 /* ## Main Content Area
 --------------------------------------------- */
@@ -429,24 +414,23 @@ section[aria-labelledby="evaluate-header"] input[type="submit"] {
     padding: 2rem 0;
 }
 
-#results-summary {
+#report-section--summary {
     background-color: #f0f0f0;
     padding: 2rem;
 }
-#results-summary ul {
-    list-style: none;
+#report-section--summary ul {
     list-style-position: inside;
     padding: 0;
 }
-#results-summary-reference {
+#report-section--summary-reference {
     display: flex;
     flex-basis: 100%;
     flex-wrap: wrap;
 }
-#results-summary-reference div {
+#report-section--summary-reference div {
     flex-basis: 50%;
 }
-#results-summary-reference p {
+#report-section--summary-reference p {
     flex-basis: 100%;
 }
 
@@ -461,36 +445,39 @@ section[aria-labelledby="evaluate-header"] input[type="submit"] {
     padding-bottom: 1rem;
 }
 
-.main-content details {
-    padding: 1rem 1rem 2rem 1rem;
-    border-bottom: 1px dashed #ccc;
-}
-.main-content details:nth-of-type(even) {
-    background-color: #f3f3f3;
+table caption {
+    font-weight: 600;
+    padding: 2rem 1rem;
 }
 
-.results-criteria div {
-    display: flex;
-    flex-wrap: wrap;
+thead {
+    font-weight: 600;
 }
 
-.results-criteria p {
-    flex-basis: 100%;
-    width: 100%;
-}
-.results-criteria table {
-    flex-basis: 100%;
+tr td,
+tr th {
     padding: 1rem;
     text-align: left;
-    width: 100%;
+    word-wrap:break-word;
 }
-.results-criteria thead {
-    background-color: #acc8ff;
-    line-height: 2;
+
+th[role=columnheader] {
+    background-color: #ced8ec;
 }
-.results-criteria th,
-.results-criteria td {
-    padding-left: 1rem;
+
+thead th[role=rowheader] {
+    background-color: #c1d3f8;
+}
+th[role=rowheader],
+.column-sub_headers {
+    background-color: #ddd;
+}
+
+.row-001,
+.row-002,
+.row-003,
+.row-004 {
+    background-color: #efefef;
 }
 
 /* # Site Footer
@@ -498,6 +485,9 @@ section[aria-labelledby="evaluate-header"] input[type="submit"] {
 
 .footer {
     background-color: #be2a2c;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .footer nav {
     margin: 0 auto;
