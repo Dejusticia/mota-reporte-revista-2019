@@ -49,5 +49,13 @@
         "webpack-cli": "^3.3.9",
         "webpack-dev-server": "^3.8.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@material/button": "^3.2.0",
+        "@material/card": "^3.2.0",
+        "@material/data-table": "^3.2.0",
+        "@material/layout-grid": "^3.1.0",
+        "@material/ripple": "^3.2.0",
+        "@material/top-app-bar": "^3.2.0",
+        "@material/typography": "^3.1.0"
+    }
 }
