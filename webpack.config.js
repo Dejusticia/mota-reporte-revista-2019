@@ -1,6 +1,6 @@
 const autoprefixer = require('autoprefixer');
 module.exports = [{
-  entry: ['./app.scss', './app.js'],
+  entry: ['./src/assets/scss/app.scss', './src/assets/js/app.js'],
   output: {
     // This is necessary for webpack to compile
     // But we never use style-bundle.js
@@ -42,7 +42,17 @@ module.exports = [{
           query: {
               presets: ['@babel/preset-env'],
           },
-      }
+      },
+    {
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [{
+            loader: 'url-loader',
+            options: {
+                limit: 1024, // Convert images < 8kb to base64 strings
+                name: 'images/[hash]-[name].[ext]'
+            }
+        }]
+    }
     ]
   },
 }];

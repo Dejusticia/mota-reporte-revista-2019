@@ -1,7 +1,7 @@
 {
     "name": "mota-reporte-revista-2019",
-    "version": "0.1.0",
-    "description": "Versión estendida del Reporte MOTA publicado en la Revista Alianza Más Informaciones, Más Derechos 2019",
+    "version": "0.2.0",
+    "description": "Reporte completo de evaluacción MOTA - Monitoreo de Obligaciones de Trasparencia Ativa, publicado en la Revista DesTápate, de la alianza Más Informaciones, Más Derechos, em septiembre de 2019.",
     "main": "index.html",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,7 +26,11 @@
         "Colombia",
         "Colômbia",
         "transparência",
-        "reporte"
+        "reporte",
+        "alianza Más Informácion Más Derechos",
+        "derechos",
+        "direitos",
+        "rights"
     ],
     "author": "Celso Bessa, Daniel Ospina",
     "license": "MIT",
@@ -45,15 +49,18 @@
         "node-sass": "^4.12.0",
         "postcss-loader": "^3.0.0",
         "sass-loader": "^8.0.0",
+        "url-loader": "^2.1.0",
         "webpack": "^4.41.0",
         "webpack-cli": "^3.3.9",
         "webpack-dev-server": "^3.8.1"
     },
     "dependencies": {
+        "@material/button": "^3.2.0",
         "@material/card": "^3.2.0",
         "@material/data-table": "^3.2.0",
         "@material/icon-button": "^3.2.0",
         "@material/layout-grid": "^3.1.0",
+        "@material/theme": "^3.1.0",
         "@material/top-app-bar": "^3.2.0",
         "@material/typography": "^3.1.0"
     }
