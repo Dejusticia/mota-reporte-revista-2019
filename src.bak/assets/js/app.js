@@ -1,11 +1,3 @@
-/*!
- * mota-reporte-revista-2019 v0.1.0
- * Reporte MOTA - Revista Alianza Más Informaciones, Más Derechos
- * (c) 2019 
- * MIT License
- * git+https://github.com/Dejusticia/mota-reporte-revista-2019.git
- */
-
 /*  Don't forget to load utilities.js first */
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -65,21 +57,21 @@
     var getReport = function (url) {
         var urlObject = getValidDomainInfo(url);
         // cleanup results containers and site info
-        resultsContainers.forEach((function (elem, index) {
+        resultsContainers.forEach(function (elem, index) {
             elem.innerHTML = '<div role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate"><div class="mdc-linear-progress__buffering-dots"></div><div class="mdc-linear-progress__buffer"></div><div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar"><span class="mdc-linear-progress__bar-inner"></span></div><div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar"><span class="mdc-linear-progress__bar-inner"></span></div></div>';
-        }));
+        });
 
         // fetch a report from the report repository
         atomic('https://dejusticia.github.io/mota-reports/' + urlObject.reportBasename + '.json' )//
-            .then((function (response) {
+            .then(function (response) {
                 report = response.data;
                 //console.log('success report', report); // xhr.responseText
                 processReport(report);
                 return report;
-            }))
-            .catch((function (error) {
+            })
+            .catch(function (error) {
                 processReportError();
-            }));
+            });
     };
 
     /**
