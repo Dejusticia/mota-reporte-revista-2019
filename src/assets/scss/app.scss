@@ -19,7 +19,27 @@ $mota-theme-secondary-dark: #001464;
 @import "@material/typography/mdc-typography";
 
 body {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: $mdc-typography-font-family;
+}
+
+.no-js body {
+    background-image: url('../img/basico/colombia-bogota-flavia-carpio.jpg');
+}
+
+.js body {
+    background-image: url('../img/1024/colombia-bogota-flavia-carpio.jpg');
+}
+
+.no-js body.credits--glass-building {
+    background-image: url('../img/basico/glass-building-madrid-joel-filipe-jU9VAZDGMzs-unsplash.jpg');
+}
+
+.js body.credits--glass-building {
+    background-image: url('../img/1024/glass-building-madrid-joel-filipe-jU9VAZDGMzs-unsplash.jpg');
 }
 
 .mdc-card--free-content {
@@ -128,28 +148,60 @@ th[role=rowheader],
     }
 }
 
+/* ## Tablet Vertical Orientation
+--------------------------------------------- */
+@media only screen and (min-height: 880px) and (orientation : portrait) {
+    .js body {
+        background-image: url('../img/1280/colombia-bogota-flavia-carpio.jpg');
+    }
+
+    .js body.credits--glass-building {
+        background-image: url('../img/1280/glass-building-madrid-joel-filipe-jU9VAZDGMzs-unsplash.jpg');
+    }
+}
+
 /* ## Small Desktops and Laptops
 --------------------------------------------- */
 @media only screen and (min-width: 880px) {
 
 }
 
-/* ## Medium Desktops and Laptops
---------------------------------------------- */
-@media only screen and (min-width: 1024px) {
-
-    main {
-        max-width: 80%;
-    }
-
-}
-
 /* ## Large Desktops and Laptops
 --------------------------------------------- */
 @media only screen and (min-width: 1200px) {
+    .js body {
+        background-image: url('../img/1280/colombia-bogota-flavia-carpio.jpg');
+    }
+
+    .js body.credits--glass-building {
+        background-image: url('../img/1280/glass-building-madrid-joel-filipe-jU9VAZDGMzs-unsplash.jpg');
+    }
 
     main {
         max-width: 1024px;
     }
 }
 
+/* ## Extra Large Desktops and Laptops
+--------------------------------------------- */
+@media only screen and (min-width: 1400px) {
+    .js body {
+        background-image: url('../img/2048/colombia-bogota-flavia-carpio.jpg');
+    }
+
+    .js body.credits--glass-building {
+        background-image: url('../img/2048/glass-building-madrid-joel-filipe-jU9VAZDGMzs-unsplash.jpg');
+    }
+}
+
+/* ## Webpack bug
+--------------------------------------------- */
+@media only screen and (min-width: 1690px) {
+    .js body {
+        background-image: url('../img/2048/colombia-bogota-flavia-carpio.jpg');
+    }
+
+    .js body.credits--glass-building {
+        background-image: url('../img/2048/glass-building-madrid-joel-filipe-jU9VAZDGMzs-unsplash.jpg');
+    }
+}
