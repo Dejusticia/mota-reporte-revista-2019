@@ -11,6 +11,11 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 
 ## Unreleased
 
+## [2019-10-03] - 0.3.1
+
+### Fixed:
+- fix main content background;
+
 ## [2019-10-03] - 0.3.0
 
 ### Changed:
