@@ -1,7 +1,7 @@
 Project: Reporte revista DesTápate MOTA - Monitoreo de Obligaciones de Trasparencia Ativa
 Description:Reporte completo de evaluacción MOTA - Monitoreo de Obligaciones de Trasparencia Ativa, publicado en la Revista DesTápate, de la alianza Más
         Informaciones, Más Derechos, em septiembre de 2019.
-Version: 0.3.6
+Version: 0.3.7
 Author(s): Celso Bessa, Daniel Ospina
 URL: https://github.com/Dejusticia/mota-reporte-revista-2019
 Keywords: transparency, transparencia, transparencia activa, active transparency, monitor, veeduria, Colombia, MOTA, ATOM, reporte, alianza Más Informácion Más Derechos, derechos, direitos, rights
@@ -10,6 +10,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/)
 
 ## Unreleased
+
+## [2020-02-13] - 0.3.7
+
+### Changed:
+- updated dependencies
+- some minor tweaks
 
 ## [2020-01-10] - 0.3.6
 
