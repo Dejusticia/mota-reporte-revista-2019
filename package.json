@@ -1,6 +1,6 @@
 {
     "name": "mota-reporte-revista-2019",
-    "version": "0.3.7",
+    "version": "0.3.8",
     "description": "Reporte completo de evaluacción MOTA - Monitoreo de Obligaciones de Trasparencia Ativa, publicado en la Revista DesTápate, de la alianza Más Informaciones, Más Derechos, em septiembre de 2019.",
     "main": "index.html",
     "scripts": {
