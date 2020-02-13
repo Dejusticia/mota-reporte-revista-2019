@@ -1,5 +1,7 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = [{
     entry: {
         style: './src/assets/scss/app.scss',
@@ -65,4 +67,10 @@ module.exports = [{
             }
         ]
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, 'index.html'),
+            inject: 'body',
+        })
+    ]
 }];
