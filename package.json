@@ -1,6 +1,6 @@
 {
     "name": "mota-reporte-revista-2019",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "Reporte completo de evaluación MOTA - Monitoreo de Obligaciones de Trasparencia Ativa, publicado en la Revista DesTápate, de la alianza Más Informaciones, Más Derechos, em septiembre de 2019.",
     "main": "index.html",
     "scripts": {
@@ -38,21 +38,21 @@
     },
     "homepage": "https://github.com/Dejusticia/mota-reporte-revista-2019#readme",
     "devDependencies": {
-        "@babel/core": "^7.7.5",
-        "@babel/preset-env": "^7.7.6",
-        "autoprefixer": "^9.7.3",
-        "babel-loader": "^8.0.6",
-        "css-loader": "^3.2.1",
-        "extract-loader": "^3.1.0",
+        "@babel/core": "^7.11.0",
+        "@babel/preset-env": "^7.11.0",
+        "autoprefixer": "^9.8.6",
+        "babel-loader": "^8.1.0",
+        "css-loader": "^3.6.0",
+        "extract-loader": "^3.2.0",
         "file-loader": "^4.3.0",
         "html-webpack-plugin": "^3.2.0",
         "postcss-loader": "^3.0.0",
-        "sass": "^1.24.4",
-        "sass-loader": "^8.0.0",
+        "sass": "^1.26.10",
+        "sass-loader": "^8.0.2",
         "serialize-javascript": "^2.1.2",
         "url-loader": "^2.3.0",
-        "webpack": "^4.41.2",
-        "webpack-cli": "^3.3.10"
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
     },
     "dependencies": {
         "@material/button": "^3.2.0",
